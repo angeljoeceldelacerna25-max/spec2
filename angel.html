@@ -5,11 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechHub Store - Your Tech Shopping Destination</title>
-    <!--CSS framework,prebuilt styles -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <meta name="description" content="Discover the latest in tech at TechHub Store. From laptops to smartphones, we have everything you need.">
-    <!--adds a library of icons to your website so you can easily display icons using Bootstrap icon classes.-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
 </head>
 
 <body class="" >
@@ -20,62 +19,55 @@
     </a>
 
     <!-- Header Section -->
-    <header class="sticky-top">
-  <nav class="navbar navbar-expand-lg navbar-dark p-3 mb-2 bg-warning-subtle ">
-    <div class="container">
-      <a class="navbar-brand fw-bold fs-4 text-warning" href="#">TechHub</a>
-      <!---creates the menu toggle button-->
-      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#techhubNavbar" aria-controls="techhubNavbar" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="techhubNavbar">
+    <header>
+        <div class="container  py-3" >
+            <div class="row align-items-center">
 
-        
-        <!---unordered list-->
-        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fw-semibold">
-          <li class="nav-item">
-            <a class="nav-link active text-warning" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark">Products</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark">Categories</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark" >About</a>
-          </li>
-          <li class="nav-item">
-          <a class="nav-link text-dark" >Contact</a>
+                <!-- Logo -->
+                <div class="col-md-3">
+                    <a href="#" class="fw-bold text-decoration-none text-dark">
+                        <h3>TechHub Store</h3>
+                    </a>
+                </div>
 
-          </li>
-        </ul>
-        <div class="d-flex align-items-center gap-3">
-          <form class="d-none d-lg-flex">
-            <!--styled search input field inside a form-->
-            <input class="form-control form-control-sm rounded-pill me-2 border-0" type="search" placeholder="Search...">
-            <!--styled Bootstrap submit button used to perform a search action-->
-            <button class="btn btn-warning btn-sm rounded-pill fw-semibold" type="submit">Search</button>
-          </form>
-          <a href="#" class="position-relative text-light text-decoration-none">
-            <span class="fs-5">🛒</span>
-            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-              0
-            </span>
-          </a>
-          <a href="#" class="btn btn-outline-warning btn-sm rounded-pill px-3 fw-semibold">Login</a>
-        </div>
-      </div>
-    </div>
-  </nav>
-</header>
                 <!-- Navigation -->
-                
+                <div class="col-md-6 text-dark fw-semibold">
+                    <nav class="">
+                        <ul class="nav justify-content-center ">
+                            <li class="nav-item"><a class="text-dark nav-link" href="#">Home</a></li>
+                            <li class="nav-item"><a class="text-dark nav-link" href="#">Products</a></li>
+                            <li class="nav-item"><a class="text-dark nav-link" href="#">Categories</a></li>
+                            <li class="nav-item"><a class="text-dark nav-link" href="#">About</a></li>
+                            <li class="nav-item"><a class="text-dark nav-link" href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- Tools (Icons KEPT) -->
+                <div class="col-md-3 text-end">
+                    <form class="d-inline-block me-2">
+                        <input type="search" class="form-control d-inline-block w-auto"
+                            placeholder="Search products...">
+                    </form>
+
+                    <a href="#" class="me-3 text-decoration-none">
+                        🛒 <span class="badge bg-secondary">0</span>
+                    </a>
+
+                    <a href="#" class="btn btn-outline-info">
+                        👤 Login
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
      <!-- Main Content -->
   <main id="main-content">
 
     <!-- Hero -->
-    <section class="text-bg-warning p-5 text-center ">
+    <section class="text-bg-warning p-3 text-center">
       <div class="container ">
         <h1 class="display-5 fw-bold">Welcome to TechHub Store</h1>
         <p class="lead">Discover the Latest Tech Innovations</p>
@@ -87,7 +79,7 @@
 
         <!----------------------------------------------------------- Categories ------------------------------------------------------>
 
-   <section id="categories" class="py-5 shadow-lg shadowdrop">
+   <section class="py-5 shadow-lg shadowdrop">
   <div class="container ">
     <h2 class="text-center mb-4">Shop by Category</h2>
 
@@ -154,7 +146,7 @@
 
 
         <!-- -----------------------------------------------------------------Featured Products Section ----------------------------------------------------------------------------------------------->
-        <section id="featured-products" class="p-3 mb-2 bg-warning-subtle text-warning-emphasis">
+        <section id="featured-products"  class="p-3 mb-2 bg-warning-subtle text-warning-emphasis">
             <div class="container">
                 <h2 class="text-center mb-4">Featured Products</h2>
                 <div class="row g-4">
@@ -326,14 +318,12 @@
 
 
         <!------------------------------------------------------------ Newsletter Section ---------------------------------------------------------------------------->
-         <section id="featured-products"  class="p-4 mb-auto bg-warning text-warning-emphasis s">
-
         <section id="newsletter-section">
             <div class="container">
                 <div class="newsletter-box">
                     <h3>Stay Updated</h3>
                     <p>Subscribe to our newsletter for exclusive deals and updates.</p>
-                    <form class="newsletter-form row ">
+                    <form class="newsletter-form row">
                         <div class="col-8 col-md-4">
                             <input type="email" placeholder="Enter your email address">
                         </div>
@@ -349,7 +339,7 @@
 
     <!-- Footer Section -->
     <footer id="footer-info" class="footer">
-        <div class="container ">
+        <div class="container">
             <div class="row">
                 <div class="col footer-col">
                     <h4>About Us</h4>
@@ -388,7 +378,7 @@
             </div>
         </div>
     </footer>
-<!--load or run JavaScript code-->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
 </body>
